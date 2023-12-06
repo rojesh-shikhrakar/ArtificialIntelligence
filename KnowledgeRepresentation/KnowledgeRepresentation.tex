@@ -1,0 +1,65 @@
+\documentclass{beamer}
+
+\setbeameroption{hide notes} % Only slides
+% \setbeameroption{show only notes} % Only notes
+% \setbeameroption{show notes on second screen=right} % Both
+
+% \usepackage{../AssertionEvidence.sty}
+\usetheme{Madrid}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[style=verbose,backend=biber]{biblatex}
+
+\defbeamertemplate*{title page}{customized}[1][]{
+\begin{center}
+  \usebeamerfont{title}\inserttitle\par
+  \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+  \bigskip
+  \usebeamerfont{author}\insertauthor\par
+  \usebeamerfont{institute}\insertinstitute\par
+  \usebeamerfont{date}\insertdate\par
+  \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic  
+\end{center}  
+}
+
+\graphicspath{ {../../imgs/} }
+
+% Add above to the style
+
+\title{Introduction to Artificial Intelligence}
+\subtitle{The foundation and history of Artificial Intelligence and its Applications}
+\author[RMS]{Rojesh Man Shikhrakar}
+
+\begin{document}
+\maketitle
+
+\begin{frame}
+  \frametitle{Syllabus: Unit 3: Knowledge Representation And Reasoning [15Hrs]}
+  \begin{itemize}
+    \item 3.1 Definition and importance of Knowledge, Issues in Knowledge Representation, Knowledge Representation Systems, Properties of Knowledge Representation Systems, Types of Knowledge, The Role of Knowledge
+    \item 3.2 Knowledge representation techniques: Rule Based, Semantic Nets, Frames, Logic based
+    \item 3.3 Propositional Logic, Syntax and Semantic of propositional logic, Proof by Resolution, Conjunctive Normal Form (CNF), Resolution Algorithm, Limitations of Propositional Logic, Forward and Backward Chaining
+    \item 3.4 Predicate Logic, FOPL, Syntax, Semantics, Quantification, horn clauses, Inference with FOPL: By converting into PL (Existential and universal instantiation), Rules of inference, Unification and lifting, CNF for FOP L, Inference using resolution, Resolution Refutation System (RRS)
+    \item *3.5 Handling Uncertain Knowledge, Random Variables, Prior and Posterior Probability, Inference using Full Joint Distribution, Bayes r Rule and its use, Bayesian Networks, Reasoning in Bayesian Networks
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{History of Knowledge based System and Expert System}
+
+  \begin{itemize}
+    \item DENDRAL: infer molecular structure from mass spectrometry
+    \item MYCIN: diagnose blood infections and recommend antibiotics
+    \item XCON: convert customers orders into parts specification
+  \end{itemize}
+
+  Knowledge is not deterministic rules, need to model uncertainty. Requires considerable manual effort to create rules, hard to maintain.
+
+  
+
+\end{frame}
+
+  
+\end{document}

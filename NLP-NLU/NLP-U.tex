@@ -1,0 +1,44 @@
+\documentclass{beamer}
+
+\setbeameroption{hide notes} % Only slides
+% \setbeameroption{show only notes} % Only notes
+% \setbeameroption{show notes on second screen=right} % Both
+
+% \usepackage{../AssertionEvidence.sty}
+\usetheme{Madrid}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[style=verbose,backend=biber]{biblatex}
+
+\defbeamertemplate*{title page}{customized}[1][]{
+\begin{center}
+  \usebeamerfont{title}\inserttitle\par
+  \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+  \bigskip
+  \usebeamerfont{author}\insertauthor\par
+  \usebeamerfont{institute}\insertinstitute\par
+  \usebeamerfont{date}\insertdate\par
+  \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic  
+\end{center}  
+}
+
+\graphicspath{ {../imgs/} }
+
+% Add above to the style
+
+\title{Introduction to Artificial Intelligence}
+\subtitle{The foundation and history of Artificial Intelligence and its Applications}
+\author[RMS]{Rojesh Man Shikhrakar}
+
+\begin{document}
+\maketitle
+
+\begin{frame}
+  \frametitle{<title>}
+
+  
+
+\end{frame}
+
+\end{document}
